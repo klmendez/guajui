@@ -1,7 +1,8 @@
 import {readFile} from 'node:fs/promises';
+import path from 'node:path';
 import {createClient} from '@supabase/supabase-js';
 
-const root=new URL('../',import.meta.url);
+const root=process.cwd();
 const allowedRoles=new Set(['superadmin','enumerator','community_leader']);
 export const ownerEmail='planetnodesarrolloguapi@gmail.com';
 export const validUsername=value=>/^[a-z][a-z0-9._-]{2,39}$/.test(value);
@@ -14,7 +15,7 @@ export async function readServerConfig(){
   const values={};
   for(const file of ['.env.local','.env.server.local']){
     try{
-      for(const line of (await readFile(new URL(file,root),'utf8')).split(/\r?\n/)){
+      for(const line of (await readFile(path.join(root,file),'utf8')).split(/\r?\n/)){
         const match=line.trim().match(/^([A-Z_]+)=(.*)$/);
         if(match)values[match[1]]=match[2].trim().replace(/^(['"])(.*)\1$/,'$2');
       }
