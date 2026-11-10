@@ -1,0 +1,61 @@
+.survey-choice{margin:0;padding:16px;border:1px solid #b8c6c0}.survey-choice legend{padding:0 6px;font-size:12px;font-weight:700}.survey-choice>div{display:grid;gap:9px}.survey-choice label{display:flex;align-items:center;gap:9px;font-weight:500}.survey-choice input{width:17px;min-height:17px;margin:0}.survey-choice .scale-options{grid-template-columns:repeat(5,1fr);gap:8px}.scale-options label{display:grid;place-items:center;gap:7px;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--paper)}.survey-choice>small{display:flex;justify-content:space-between;margin-top:7px;color:var(--muted);font-size:9px}
+.survey-section{margin:18px -30px 0;padding:22px 30px 5px;border-top:1px solid var(--line);background:linear-gradient(180deg,var(--soft),#fff)}.survey-section h3{margin:0;color:var(--green);font-size:18px}.survey-section p{margin:6px 0 0!important;font-size:11px}.field-help{display:block;margin:2px 0 5px!important;color:var(--muted);font-size:10px!important;font-weight:500!important;line-height:1.5}.survey-choice>p.field-help{margin:0 0 12px!important}
+.update-list{margin:0 0 18px;padding:22px;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:8px;background:#fff}.update-list h3{margin:0 0 4px}.update-list>p{margin:0 0 15px;color:var(--muted);font-size:12px}.update-list .admin-table{max-height:360px}.missing-badge{display:inline-block;padding:5px 8px;border-radius:20px;background:#fff3d6;color:#725516;font-size:9px;font-weight:700}.report-metrics{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.report-section-title{margin:30px 0 15px}.report-section-title h3{margin:7px 0 4px;font-size:24px}.report-section-title p{margin:0;color:var(--muted);font-size:12px}.pie-layout{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:center;margin-top:20px}.pie{width:165px;aspect-ratio:1;border-radius:50%;display:grid;place-content:center;position:relative}.pie:after{content:"";position:absolute;inset:28px;border-radius:50%;background:#fff}.pie>b,.pie>small{position:relative;z-index:1;text-align:center}.pie>b{font-size:25px;color:var(--green)}.pie>small{color:var(--muted);font-size:9px}.pie-legend{display:grid;gap:8px}.pie-legend>div{display:grid;grid-template-columns:10px 1fr auto;gap:7px;align-items:center;padding-bottom:6px;border-bottom:1px solid var(--line)}.pie-legend i{width:9px;height:9px;border-radius:50%}.pie-legend span,.pie-legend b{font-size:9px}.pie-legend b{text-align:right}.pie-legend small{display:block;color:var(--muted)}
+@media(max-width:500px){.pie-layout{grid-template-columns:1fr}.pie{margin:auto}}
+.survey-public-section{max-width:1180px}.survey-list-heading{max-width:680px;margin-bottom:26px}.survey-list-heading h2{margin:8px 0;font-size:clamp(28px,4vw,42px)}.survey-list-heading p{margin:0}.available-surveys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.available-surveys article{display:grid;grid-template-columns:42px 1fr;gap:16px;align-content:start;padding:24px;border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:8px;background:#fff}.available-surveys article>svg{width:34px;height:34px;color:var(--green)}.available-surveys article>div{min-width:0}.available-surveys h3{margin:10px 0 7px;font-size:18px}.available-surveys p{min-height:64px;margin:0 0 14px;font-size:12px}.available-surveys small{display:flex;align-items:center;gap:5px;margin-top:6px;color:var(--muted);font-size:10px}.available-surveys small svg{width:14px}.available-surveys .button{grid-column:1/-1;justify-self:start;margin-top:8px}.public-survey-form{max-width:900px}.survey-public-section>.back-button{margin-top:0}.survey-public-section>.success-box{max-width:800px;text-align:left}.left-entry{max-width:1050px;margin:0}.census-verify{grid-template-columns:1fr 1fr auto}.census-editor{max-width:1180px}.left-success{max-width:760px;text-align:left}.census-full-form{grid-template-columns:1fr 1fr}.census-form-section{grid-column:1/-1;margin:14px -28px 0;padding:20px 28px 4px;border-top:1px solid var(--line);background:linear-gradient(180deg,var(--soft),#fff)}.census-form-section h3{margin:0;color:var(--green)}.census-form-section p{margin:5px 0 0!important;font-size:11px}.census-full-form>label small{color:var(--muted);font-size:9px;font-weight:500}.census-master{min-width:0}.master-table{max-height:68vh;overflow:auto}.master-table table{width:max-content;min-width:100%}.master-table th,.master-table td{min-width:130px;max-width:260px;white-space:normal;vertical-align:top}.master-table th{position:sticky;top:0;z-index:3;background:#f1f5f2}.master-table th:first-child,.master-table td:first-child{position:sticky;left:0;z-index:2;min-width:175px;background:#fff}.master-table th:first-child{z-index:4;background:#e7eee9}.sticky-actions{display:flex;gap:5px}.sticky-actions button{white-space:nowrap}.valid-badge{display:inline-block;padding:5px 8px;border-radius:20px;background:#e4f3e8;color:#24683e;font-size:9px;font-weight:700}.table-result-count{font-size:11px}.census-admin-modal{width:min(1100px,96vw);max-height:92vh;overflow:auto}.admin-edit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.admin-edit-grid label{min-width:0}.modal-actions{display:flex;justify-content:flex-end;gap:8px}.request-list{display:grid;gap:10px}.request-list article{display:flex;justify-content:space-between;gap:20px;padding:20px;border:1px solid var(--line);border-radius:8px;background:#fff}.request-list h3{margin:8px 0 4px}.request-list p{margin:0;color:var(--muted);font-size:11px}.request-actions{display:flex;align-items:center;gap:7px}.certificate-section{max-width:980px}.certificate-lookup{max-width:800px}.certificate-section .certificate{margin-left:0}
+@media(max-width:900px){.available-surveys{grid-template-columns:1fr 1fr}.census-verify{grid-template-columns:1fr}.admin-edit-grid{grid-template-columns:1fr 1fr}.request-list{align-items:stretch}.request-list article{flex-direction:column}.request-actions{align-self:flex-start}}
+@media(max-width:600px){.available-surveys,.census-full-form,.admin-edit-grid{grid-template-columns:1fr}.census-form-section{grid-column:auto}.request-actions{flex-wrap:wrap}.master-table{max-height:62vh}}
+
+/* Experiencia móvil del censo */
+@media(max-width:760px){
+  .censo-entry,.census-editor,.certificate-section{width:100%;padding:38px 16px}
+  .left-entry .notice{margin-bottom:14px;padding:16px}
+  .census-verify{padding:16px;gap:14px;border-radius:8px}
+  .census-verify label{font-size:13px}
+  .census-verify input,.census-verify .button,.census-full-form input,.census-full-form select,.census-full-form textarea{min-height:48px;font-size:16px}
+  .census-verify .button{width:100%}
+  .choice-divider{margin:5px 0 24px}
+  .new-house{min-height:72px;margin-top:0;padding:16px;border-radius:8px;align-items:flex-start}
+  .new-house svg{flex:0 0 auto;width:24px;height:24px}
+  .new-house b{font-size:13px}.new-house small{font-size:11px;line-height:1.5}
+  .census-editor>.back-button{min-height:44px;margin-bottom:18px}
+  .census-editor .section-heading{margin-bottom:20px}
+  .census-editor .section-heading h2{margin-bottom:8px;font-size:28px}
+  .census-full-form{gap:16px;padding:0;border:0;background:transparent}
+  .census-full-form>label,.census-full-form>.survey-choice{padding:16px;border:1px solid var(--line);border-radius:8px;background:#fff}
+  .census-full-form>label{gap:9px;font-size:13px}
+  .census-full-form>label small{font-size:10px;line-height:1.5}
+  .census-form-section{position:sticky;top:74px;z-index:4;margin:16px 0 0;padding:16px;border:1px solid #cad7d1;border-left:4px solid var(--gold);border-radius:7px;background:#edf2ed;box-shadow:0 5px 12px rgba(20,52,43,.06)}
+  .census-form-section:first-child{margin-top:0}
+  .census-form-section h3{font-size:16px;line-height:1.3}
+  .census-form-section p{line-height:1.45}
+  .census-full-form .survey-choice{margin:0}
+  .census-full-form .survey-choice legend{max-width:90%;padding:0 5px;font-size:13px;line-height:1.35}
+  .census-full-form .survey-choice>div{gap:7px}
+  .census-full-form .survey-choice label{min-height:44px;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--paper);font-size:12px}
+  .census-full-form .survey-choice input{width:20px;min-height:20px;flex:0 0 auto}
+  .census-full-form .consent{padding:16px!important;line-height:1.5}
+  .census-full-form .submit-button{position:sticky;bottom:12px;z-index:6;width:100%;min-height:52px;box-shadow:0 8px 24px rgba(16,58,46,.28)}
+  .left-success{padding:28px 20px}.left-success>svg{width:44px;height:44px}
+  .certificate-lookup{padding:16px}.certificate-section .certificate{padding:34px 20px}
+  .master-table{position:relative;max-height:65vh;border-radius:8px;box-shadow:inset -15px 0 18px -20px #000}
+  .master-table:after{content:"Desliza horizontalmente para ver todas las columnas";position:sticky;left:10px;bottom:8px;display:inline-block;padding:6px 9px;border-radius:20px;background:#173f34e8;color:#fff;font-size:9px;pointer-events:none}
+  .master-table th,.master-table td{min-width:120px;padding:11px 9px;font-size:10px}
+  .master-table th:first-child,.master-table td:first-child{min-width:124px}
+  .sticky-actions{display:grid;align-content:start}.sticky-actions button{min-height:38px;justify-content:center}
+  .census-admin-modal{position:fixed;inset:0;width:100%;max-height:100vh;border-radius:0}
+  .census-admin-modal .form-card{padding:54px 16px 100px}
+  .census-admin-modal .modal-close{position:fixed;top:10px;right:10px}
+  .census-admin-modal .modal-actions{position:fixed;right:0;bottom:0;left:0;padding:10px 16px;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 22px rgba(20,52,43,.12)}
+  .census-admin-modal .modal-actions .button{flex:1}
+  .request-list article{padding:16px}.request-actions{width:100%}.request-actions .button{flex:1}
+}
+
+@media(max-width:380px){
+  .censo-entry,.census-editor{padding-inline:12px}
+  .census-form-section{top:74px}
+  .census-full-form>label,.census-full-form>.survey-choice{padding:13px}
+  .census-admin-modal .modal-actions{flex-direction:column}
+}
+@media(max-width:450px){.survey-choice .scale-options{gap:4px}.scale-options label{padding:8px 4px}}

@@ -1,0 +1,36 @@
+/* Formulaires planos: la superficie delimitada corresponde a la respuesta. */
+body :is(h1,h2,h3,h4,h5,h6,b,strong,legend,button,.button){font-weight:700}
+body :is(form.survey-form,form.form-card,form.lookup-card,form.census-family-form,form.publication-form,.census-form,.household-shared-form,.family-member-form,.builder-card){
+  border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;
+  padding:0!important;margin-top:0;
+}
+body :is(form,.census-workflow) :is(.resume-job,.resume-education-item,.meeting-list-field,.teacher-day,.teacher-match-box,.teacher-criteria fieldset,.board-rating,.survey-choice,.family-size-field,.family-consent,.resume-consent,.teacher-privacy,.census-form-section,.teacher-form-heading,.resume-section-heading,.meeting-form-subheading,.survey-section){
+  border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;
+  padding:0!important;margin:0;
+}
+body :is(form,.census-workflow) :is(.census-full-form>label,.resume-level-toggle,.resume-inline-choice,.teacher-scheduled){
+  border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;padding:0!important;
+}
+body :is(form.survey-form,form.form-card,form.lookup-card,form.publication-form,.census-family-form){gap:18px;align-content:start}
+body form :is(.resume-form-grid,.meeting-contact-grid,.teacher-followup-grid,.board-performance-grid,.service-fields,.census-full-form){gap:14px 20px}
+body form :is(.resume-section-heading,.teacher-form-heading,.meeting-form-subheading,.survey-section,.census-form-section){border-top:1px solid var(--line)!important;padding-top:16px!important;margin-top:6px}
+body form :is(.resume-section-heading,.teacher-form-heading,.meeting-form-subheading,.survey-section,.census-form-section) :is(h2,h3,h4){margin:0 0 5px;line-height:1.3;letter-spacing:normal;font-weight:700}
+body form :is(.resume-job,.resume-education-item,.meeting-list-field,.teacher-day){gap:10px;padding-bottom:14px!important;border-bottom:1px solid var(--line)!important}
+body form :is(.teacher-criteria fieldset,.board-rating,.survey-choice){margin:0 0 8px;min-width:0}
+body form legend{padding:0!important;margin-bottom:8px;font-size:14px;line-height:1.4;letter-spacing:normal;font-weight:700}
+body form label{letter-spacing:normal;line-height:1.4}
+body form :is(input,select,textarea):not([type=checkbox]):not([type=radio]){background:#fff;border:1px solid #b9cabe;border-radius:6px;box-shadow:none}
+body form :is(.field-help,label small){line-height:1.4}
+.public-service-page .survey-form>header{padding:0 0 16px;margin:0;gap:12px}
+.public-service-page .survey-form>header>svg{background:transparent;border-radius:0;padding:0;width:26px;height:26px;flex-basis:26px}
+.public-service-page .survey-form>header h2{font-weight:700;font-size:22px;margin:5px 0;line-height:1.3}
+.public-service-page .survey-form>header .status{padding:0;background:transparent;border-radius:0;font-weight:600}
+.public-service-page form .service-fieldset{padding:12px 0 0;margin:0;gap:14px}
+.platform-admin .census-content .census-step-editor .census-form{padding:0!important;gap:12px}
+.platform-admin .census-content .census-step-editor .family-size-field{padding:0!important;gap:5px}
+body .family-member-form>summary{padding:10px 0;background:transparent;font-weight:700}
+@media(max-width:640px){
+  body :is(form.survey-form,form.form-card,form.lookup-card,form.publication-form,.census-family-form){gap:16px}
+  body form :is(input,select,textarea):not([type=checkbox]):not([type=radio]){font-size:16px;min-height:44px}
+  .public-service-page .survey-form>header h2{font-size:20px}
+}

@@ -1,0 +1,134 @@
+.survey-admin .admin-toolbar .survey-actions a.button.primary { display: none; }
+.enumerator-census .notice { display: none; }
+.enumerator-census .section { padding-top: 8px; padding-bottom: 8px; }
+.enumerator-census .census-entry { margin-top: 0; }
+.mobile-menu-toggle { display: none !important; }
+.family-size-field { display: grid; gap: 7px; max-width: 420px; margin: 0 0 16px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; font-size: 12px; font-weight: 700; }
+.family-size-field input { min-height: 44px; padding: 10px; border: 1px solid #b8c6c0; }
+.family-size-field small { color: var(--muted); font-size: 10px; font-weight: 500; }
+.census-family-form { display: grid; gap: 12px; }
+.family-member-form { border: 1px solid var(--line); border-radius: 9px; background: #fff; overflow: hidden; }
+.family-member-form > summary { display: flex; align-items: center; gap: 9px; padding: 15px 18px; background: var(--soft); color: var(--green); font-weight:700; cursor: pointer; }
+.family-member-form > summary svg { width: 19px; }
+.family-member-form > .census-form { border: 0; }
+.family-consent { padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.family-receipts { display: grid; gap: 5px; margin: 10px 0 18px; font-size: 11px; }
+.household-shared-form { overflow: hidden; border: 1px solid var(--line); border-radius: 9px; background: #fff; }
+.household-shared-heading { padding: 16px 18px; background: var(--green); color: #fff; }
+.household-shared-heading h3 { margin: 0 0 4px; }
+.household-shared-heading p { margin: 0; color: #dce9e4; font-size: 11px; }
+.household-shared-form > .census-form { border: 0; }
+.census-family-group { display: grid; gap: 12px; padding-bottom: 12px; }
+.census-family-group > .family-size-field,
+.census-family-group > .family-member-form { margin-left: 16px; margin-right: 16px; }
+
+@media (max-width: 820px) {
+  body { background: #eef2ef; }
+  .admin-page, .admin-page.sidebar-collapsed { display: block !important; min-height: 100vh; }
+  .admin-page > aside { position: sticky !important; top: 0; z-index: 1000 !important; width: 100%; height: 58px !important; min-height: 58px !important; padding: 8px 12px !important; overflow: visible !important; display: flex !important; align-items: center; background: #123d32; box-shadow: 0 3px 12px rgba(18,61,50,.22); }
+  .admin-profile, .admin-role, .sidebar-toggle { display: none !important; }
+  .mobile-menu-toggle { display: grid !important; place-items: center; width: 42px; height: 42px; min-height: 42px !important; padding: 8px !important; border: 1px solid rgba(255,255,255,.14) !important; border-radius: 8px !important; background: rgba(255,255,255,.08) !important; color: #fff !important; }
+  .mobile-menu-toggle svg { display: block !important; width: 24px; height: 24px; }
+  .admin-page > aside nav, .admin-page.sidebar-collapsed > aside nav { display: none !important; position: absolute !important; top: 58px !important; left: 10px !important; right: 10px !important; z-index: 1001 !important; padding: 8px !important; background: #123d32 !important; border: 1px solid rgba(255,255,255,.1); border-radius: 0 0 10px 10px; box-shadow: 0 12px 26px rgba(0,0,0,.24); }
+  .admin-page.mobile-menu-open > aside nav, .admin-page.mobile-menu-open.sidebar-collapsed > aside nav { display: grid !important; grid-template-columns: 1fr !important; gap: 4px !important; }
+  .admin-page > aside nav button, .admin-page.sidebar-collapsed > aside nav button { display: flex !important; width: 100% !important; min-height: 46px !important; padding: 10px 12px !important; justify-content: flex-start !important; gap: 10px !important; color: #dce9e4 !important; opacity: 1 !important; border: 0 !important; border-left: 3px solid transparent !important; border-radius: 6px !important; }
+  .admin-page > aside nav button.active { color: #fff !important; background: rgba(255,255,255,.1) !important; border-left-color: var(--gold) !important; }
+  .admin-page > aside nav button > span, .admin-page.sidebar-collapsed > aside nav button > span { display: block !important; font-size: 12px; }
+  .admin-workspace { position: relative; z-index: 1; background: #f7f9f7; min-height: calc(100vh - 58px); }
+  .admin-topbar { top: 58px; min-height: 58px; padding: 9px 14px; box-shadow: 0 1px 0 var(--line); }
+  .admin-topbar > div:first-child { min-width: 0; display: grid; gap: 2px; }
+  .admin-topbar > div:first-child small { font-size: 8px; letter-spacing: .7px; }
+  .admin-topbar > div:first-child b { font-size: 16px; }
+  .admin-session button { min-height: 38px !important; padding: 7px 11px !important; border-radius: 7px !important; }
+  .admin-content { padding: 12px 12px 16px; }
+  .admin-toolbar { margin: 4px 0 12px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .admin-toolbar h2 { margin: 0 0 4px; font-size: 20px !important; line-height: 1.2; }
+  .admin-toolbar p { font-size: 11px; line-height: 1.45; }
+  .metrics { gap: 9px; margin: 0; }
+  .metrics article { padding: 14px 15px; border: 1px solid var(--line); border-left: 3px solid var(--green); border-radius: 8px; background: #fff; }
+  .metrics article span { font-size: 9px; text-transform: uppercase; letter-spacing: .35px; }
+  .metrics article b { margin: 5px 0 2px; font-size: 26px; }
+  .metrics article small { font-size: 9px; }
+  .survey-admin-list { gap: 10px; }
+  .survey-admin-list > article { padding: 14px !important; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .survey-admin-list h3 { margin: 7px 0 4px; font-size: 15px; line-height: 1.3; }
+  .survey-admin-list p { font-size: 10px; line-height: 1.4; }
+  .survey-actions { flex-wrap: wrap; }
+  .survey-actions .button, .survey-actions button { flex: 1 1 140px; min-height: 42px !important; border-radius: 7px !important; }
+  .enumerator-census .admin-toolbar { margin: 8px 0; }
+  .enumerator-census .admin-toolbar h2 { font-size: 18px; }
+  .enumerator-census .lookup-card { padding: 14px; gap: 10px; border-radius: 9px; box-shadow: 0 3px 12px rgba(18,61,50,.06); }
+  .enumerator-census .lookup-card label { font-size: 11px; }
+  .enumerator-census .lookup-card input, .enumerator-census .lookup-card button { min-height: 42px; }
+  .enumerator-census .choice-divider { margin: 10px 0; }
+  .enumerator-census .new-house { padding: 14px; border-radius: 9px; align-items: center; }
+  .enumerator-census .new-house small { line-height: 1.4; }
+  .enumerator-census .census-form { padding: 12px; gap: 12px; border-radius: 8px; }
+  .enumerator-census .census-form-section { margin: 8px -12px 0; padding: 15px 12px 3px; }
+  .enumerator-census .census-full-form > label, .enumerator-census .census-full-form > .survey-choice { padding: 12px; border-radius: 7px; }
+  .family-size-field { max-width: none; margin-bottom: 10px; padding: 12px; }
+  .family-member-form > summary { padding: 13px 14px; }
+  .household-shared-heading { padding: 13px 14px; }
+}
+
+/* Forma única para todos los controles de acción. */
+button,
+.button,
+.icon-button,
+.back-button,
+.modal-close {
+  border-radius: 0 !important;
+}
+
+/* Un solo lenguaje visual para todos los botones, incluido el navbar. */
+body button,
+body .button,
+body .site-header .admin-nav,
+body .home-editorial .river-link,
+body .home-editorial .river-text-link {
+  min-height: 44px !important;
+  padding: 10px 16px !important;
+  border: 1px solid var(--green) !important;
+  border-radius: 0 !important;
+  background: var(--green) !important;
+  color: #fff !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  box-shadow: none !important;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease !important;
+}
+
+body button:hover,
+body .button:hover,
+body .site-header .admin-nav:hover,
+body .home-editorial .river-link:hover,
+body .home-editorial .river-text-link:hover {
+  border-color: var(--green) !important;
+  background: #fff !important;
+  color: var(--green) !important;
+}
+
+.contact-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 10px 28px rgba(14, 46, 38, .22) !important;
+}
+
+.contact-float svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 600px) {
+  .contact-float {
+    right: 12px;
+    bottom: 12px;
+    max-width: calc(100vw - 24px);
+  }
+}

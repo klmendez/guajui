@@ -1,0 +1,15 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './styles/global.css';
+import './styles/interactions.css';
+import './styles/design-system.css';
+import './styles/surveys.css';
+import './styles/survey-choices.css';
+import './styles/compact-admin.css';
+import './styles/enumerator.css';
+import './styles/public-editorial.css';
+import './styles/public-services.css';
+import './styles/flat-forms.css';
+ReactDOM.createRoot(document.getElementById('root')).render(<React.StrictMode><BrowserRouter><App/></BrowserRouter></React.StrictMode>);

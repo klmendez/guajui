@@ -1,0 +1,601 @@
+/* Lenguaje editorial compartido por todas las páginas públicas. */
+.page-hero {
+  min-height: 500px;
+  padding-bottom: 72px;
+}
+
+.page-hero > div {
+  max-width: 920px;
+}
+
+.page-hero h1 {
+  max-width: 900px;
+  font-size: clamp(44px, 6vw, 78px);
+  line-height: 1.02;
+}
+
+.page-hero p {
+  max-width: 650px;
+}
+
+.section:not(.survey-public-section):not(.certificate-section) {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+/* Consejo: datos y principios como contenido continuo, no como tarjetas. */
+.fact-row {
+  gap: 28px;
+}
+
+.fact-row div {
+  border-top: 3px solid var(--gold);
+  padding-top: 18px;
+}
+
+.values-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 52px;
+}
+
+.values-grid article {
+  min-height: 190px;
+  padding: 30px 0;
+  border: 0;
+  border-top: 1px solid #193f3530;
+  background: transparent;
+}
+
+.values-grid article:nth-last-child(-n + 2) {
+  border-bottom: 1px solid #193f3530;
+}
+
+.values-grid svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Grupos y chirimías: filas editoriales con aire y divisores. */
+.group-grid.large {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 54px;
+}
+
+.group-grid.large article {
+  min-height: 285px;
+  padding: 30px 0;
+  border: 0;
+  border-top: 1px solid #193f3530;
+  background: transparent;
+}
+
+.group-grid.large article:nth-last-child(-n + 2) {
+  border-bottom: 1px solid #193f3530;
+}
+
+.group-grid.large h2 {
+  margin: 26px 0 8px;
+  font-size: 26px;
+}
+
+.profile-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.profile-grid article {
+  min-height: 190px;
+  padding: 30px 0;
+  border: 0;
+  border-top: 1px solid #193f3530;
+  background: transparent;
+  display: grid;
+  grid-template-columns: 64px minmax(220px, .75fr) 1fr auto;
+  gap: 12px 28px;
+  align-items: center;
+}
+
+.profile-grid article:last-child {
+  border-bottom: 1px solid #193f3530;
+}
+
+.profile-grid .profile-icon {
+  grid-row: 1 / 4;
+  align-self: start;
+}
+
+.profile-grid article > small,
+.profile-grid article > h2 {
+  grid-column: 2;
+}
+
+.profile-grid article > h2 {
+  margin: 0;
+}
+
+.profile-grid article > p,
+.profile-grid .profile-meta {
+  grid-column: 3;
+}
+
+.profile-grid article > p,
+.profile-grid .profile-meta {
+  margin: 0;
+}
+
+.profile-grid article > .button {
+  grid-column: 4;
+  grid-row: 1 / 4;
+}
+
+/* Noticias: una publicación por fila, con imagen protagonista. */
+.editorial-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.editorial-grid article {
+  grid-template-columns: minmax(260px, .8fr) 1.2fr;
+  min-height: 300px;
+  border: 0;
+  border-top: 1px solid #193f3530;
+  background: transparent;
+  padding: 30px 0;
+  gap: 42px;
+}
+
+.editorial-grid article:last-child {
+  border-bottom: 1px solid #193f3530;
+}
+
+.editorial-grid img {
+  min-height: 260px;
+}
+
+.editorial-grid article > div {
+  padding: 20px 0;
+}
+
+.editorial-grid h2 {
+  max-width: 680px;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.15;
+}
+
+/* Proyectos y agenda: registros amplios en lugar de mosaicos. */
+.project-cards {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.project-cards article {
+  min-height: 230px;
+  padding: 34px 0;
+  border: 0;
+  border-top: 1px solid #193f3530;
+  background: transparent;
+  display: grid;
+  grid-template-columns: 150px 1fr 280px auto;
+  gap: 12px 32px;
+  align-items: center;
+}
+
+.project-cards article:last-child {
+  border-bottom: 1px solid #193f3530;
+}
+
+.project-cards article > span {
+  justify-self: start;
+}
+
+.project-cards h2,
+.project-cards p {
+  grid-column: 2;
+  margin: 0;
+}
+
+.project-cards article > div {
+  grid-column: 3;
+  grid-row: 1 / 3;
+  margin: 0;
+}
+
+.project-cards article > .button {
+  grid-column: 4;
+  grid-row: 1 / 3;
+}
+
+.agenda-list {
+  gap: 0;
+}
+
+.agenda-list article {
+  grid-template-columns: 140px 1fr auto;
+  min-height: 150px;
+  padding: 28px 0;
+  border: 0;
+  border-top: 1px solid #193f3530;
+  background: transparent;
+}
+
+.agenda-list article:last-child {
+  border-bottom: 1px solid #193f3530;
+}
+
+.agenda-list time {
+  font-size: 25px;
+}
+
+.agenda-list article > button {
+  width: auto;
+  height: auto;
+}
+
+/* Encuestas y contacto: listas claras, reservando paneles para formularios. */
+.available-surveys {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.available-surveys article {
+  min-height: 190px;
+  padding: 30px 0;
+  border: 0;
+  border-top: 1px solid #193f3530;
+  border-radius: 0;
+  background: transparent;
+  grid-template-columns: 54px 1fr auto;
+  align-items: center;
+}
+
+.available-surveys article:last-child {
+  border-bottom: 1px solid #193f3530;
+}
+
+.available-surveys article > .button {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.available-surveys p {
+  min-height: auto;
+}
+
+.contact-list {
+  gap: 0;
+}
+
+.contact-list > a,
+.contact-list > article {
+  border-top: 1px solid #193f3530;
+}
+
+.contact-list > :last-child {
+  border-bottom: 1px solid #193f3530;
+}
+
+.contact-list article {
+  min-height: 105px;
+  padding: 24px 0;
+  border: 0;
+  background: transparent;
+  align-items: center;
+}
+
+.contact-list a:hover article {
+  color: var(--green);
+}
+
+.contact-layout .form-card {
+  border: 0;
+  border-top: 4px solid var(--green);
+  background: #fff;
+}
+
+/* El Churo: publicación semestral y archivo documental. */
+.river-affiliation {
+  display: grid;
+  grid-template-columns: .7fr 1.3fr;
+  gap: clamp(48px, 8vw, 120px);
+  align-items: center;
+  background: #fff;
+}
+
+.river-affiliation-logo {
+  width: min(360px, 72vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f4f1e9;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.river-affiliation-logo img {
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+}
+
+.river-affiliation > div:last-child {
+  max-width: 680px;
+}
+
+.river-affiliation h2 {
+  margin: 15px 0 20px;
+}
+
+.river-affiliation p {
+  max-width: 590px;
+  color: #687263;
+}
+
+.river-affiliation .river-link {
+  margin-top: 18px;
+}
+
+.river-churo {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: clamp(44px, 8vw, 120px);
+  align-items: center;
+  background: #eaece2;
+}
+
+.river-churo-mark {
+  min-height: 360px;
+  padding: 44px;
+  background: var(--river);
+  color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.river-churo-mark svg {
+  width: 56px;
+  height: 56px;
+  color: var(--ochre);
+}
+
+.river-churo-mark span {
+  max-width: 180px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.river-churo > div:last-child {
+  max-width: 650px;
+}
+
+.river-churo h2 {
+  margin: 15px 0 20px;
+}
+
+.river-churo p {
+  max-width: 540px;
+  color: #687263;
+}
+
+.river-churo .river-link {
+  margin-top: 18px;
+}
+
+.churo-archive {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.churo-intro {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 52px;
+}
+
+.churo-intro .eyebrow {
+  grid-column: 1 / -1;
+}
+
+.churo-intro h2 {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.08;
+}
+
+.churo-intro p {
+  margin: 0;
+}
+
+.churo-list article {
+  min-height: 180px;
+  padding: 30px 0;
+  border-top: 1px solid #193f3530;
+  display: grid;
+  grid-template-columns: 54px 1fr auto;
+  gap: 28px;
+  align-items: center;
+}
+
+.churo-list article:last-child {
+  border-bottom: 1px solid #193f3530;
+}
+
+.churo-list article > span,
+.churo-list small {
+  color: #8a7040;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.churo-list h3 {
+  margin: 8px 0;
+  font-size: 27px;
+}
+
+.churo-list p {
+  margin: 0;
+}
+
+.churo-empty {
+  min-height: 240px;
+  border-top: 1px solid #193f3530;
+  border-bottom: 1px solid #193f3530;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.churo-empty svg {
+  width: 52px;
+  height: 52px;
+  color: var(--green);
+}
+
+.churo-empty h3 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+/* Los paneles de trámites se mantienen contenidos por legibilidad. */
+.lookup-card,
+.census-form,
+.survey-form,
+.certificate {
+  border-radius: 0;
+}
+
+@media (max-width: 900px) {
+  .profile-grid article,
+  .project-cards article {
+    grid-template-columns: 58px 1fr;
+  }
+
+  .profile-grid article > p,
+  .profile-grid .profile-meta,
+  .profile-grid article > .button,
+  .project-cards h2,
+  .project-cards p,
+  .project-cards article > div,
+  .project-cards article > .button {
+    grid-column: 2;
+    grid-row: auto;
+  }
+
+  .project-cards article > span {
+    grid-column: 1;
+    align-self: start;
+  }
+}
+
+@media (max-width: 650px) {
+  .page-hero {
+    min-height: 410px;
+    padding-bottom: 52px;
+  }
+
+  .page-hero h1 {
+    font-size: 40px;
+  }
+
+  .values-grid,
+  .group-grid.large {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid article,
+  .group-grid.large article {
+    min-height: auto;
+    padding: 26px 0;
+    border-bottom: 0;
+  }
+
+  .values-grid article:last-child,
+  .group-grid.large article:last-child {
+    border-bottom: 1px solid #193f3530;
+  }
+
+  .profile-grid article {
+    grid-template-columns: 50px 1fr;
+    gap: 10px 18px;
+  }
+
+  .profile-grid article > small,
+  .profile-grid article > h2,
+  .profile-grid article > p,
+  .profile-grid .profile-meta,
+  .profile-grid article > .button {
+    grid-column: 2;
+  }
+
+  .editorial-grid article {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .editorial-grid img {
+    min-height: 220px;
+  }
+
+  .project-cards article {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cards article > span,
+  .project-cards h2,
+  .project-cards p,
+  .project-cards article > div,
+  .project-cards article > .button {
+    grid-column: 1;
+  }
+
+  .agenda-list article {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .agenda-list article > button {
+    display: inline-flex;
+    width: max-content;
+  }
+
+  .available-surveys article {
+    grid-template-columns: 42px 1fr;
+  }
+
+  .available-surveys article > .button {
+    grid-column: 2;
+    grid-row: auto;
+    justify-self: start;
+  }
+
+  .river-churo,
+  .river-affiliation,
+  .churo-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .river-affiliation-logo {
+    width: min(260px, 78vw);
+    margin-inline: auto;
+  }
+
+  .river-churo-mark {
+    min-height: 230px;
+    padding: 30px;
+  }
+
+  .churo-list article {
+    grid-template-columns: 36px 1fr;
+  }
+
+  .churo-list article > .button {
+    grid-column: 2;
+    justify-self: start;
+  }
+}

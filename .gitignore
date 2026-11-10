@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+.frontend-contract-test.mjs
+.public-routes-test.mjs
+tests/*-preview.png
+tools/ffmpeg-portable/
+tools/ffmpeg-release-essentials.zip
+*.log
+supabase/.temp/
+src/data/censusSeed.js
+

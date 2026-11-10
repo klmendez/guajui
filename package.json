@@ -1,0 +1,33 @@
+{
+  "name": "censo-comunitario-guajui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "start": "node server/index.mjs",
+    "admin:setup": "node scripts/setup-admin.mjs",
+    "test:database": "node tests/platform-database.mjs",
+    "test:frontend": "node tests/community-leader.mjs && node tests/public-routes.mjs",
+    "test:ui": "node tests/platform-ui.mjs && node tests/publications-ui.mjs",
+    "test:auth": "node tests/password-access.mjs && node tests/admin-setup.mjs",
+    "db:apply": "node scripts/apply-community-schema.mjs --platform"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.116.0",
+    "lucide": "^0.468.0",
+    "lucide-react": "^1.33.0",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.15",
+    "@playwright/test": "^1.64.1",
+    "pg": "^8.23.1",
+    "vite": "^7.1.3"
+  }
+}
