@@ -11,4 +11,5 @@ tools/ffmpeg-release-essentials.zip
 *.log
 supabase/.temp/
 src/data/censusSeed.js
+.netlify/
 
